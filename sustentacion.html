@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guía de Sustentación Oral - PowerFit GYM (Avance 1)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 11mm 12mm 11mm 12mm;
+    }
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      line-height: 1.42;
+      font-size: 9pt;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    .banner {
+      background: linear-gradient(135deg, #022c22 0%, #064e3b 50%, #0f172a 100%);
+      color: #ffffff;
+      padding: 18px 22px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+    .banner-badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      font-size: 8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 18pt;
+      margin: 2px 0 4px 0;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+    h1 span {
+      color: #34d399;
+    }
+    .banner-desc {
+      font-size: 9.5pt;
+      color: #cbd5e1;
+      margin: 0;
+      line-height: 1.35;
+    }
+    .meta-bar {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 8pt;
+      color: #94a3b8;
+    }
+    .meta-bar strong {
+      color: #f1f5f9;
+    }
+
+    h2 {
+      font-size: 12pt;
+      color: #064e3b;
+      border-bottom: 2px solid #10b981;
+      padding-bottom: 3px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-size: 10pt;
+      color: #0f172a;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+    h4 {
+      font-size: 9pt;
+      color: #334155;
+      margin-top: 6px;
+      margin-bottom: 3px;
+      font-weight: 700;
+    }
+
+    p, li {
+      color: #334155;
+      font-size: 8.8pt;
+      line-height: 1.4;
+    }
+    ul, ol {
+      margin: 4px 0 8px 16px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 2.5px;
+    }
+
+    .pitch-box {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      border-top: 1px solid #dcfce7;
+      border-right: 1px solid #dcfce7;
+      border-bottom: 1px solid #dcfce7;
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+      font-style: italic;
+      color: #166534;
+      font-size: 9pt;
+      line-height: 1.45;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin: 8px 0 12px 0;
+      background: #ffffff;
+      page-break-inside: avoid;
+    }
+    th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 6px 8px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 7.5pt;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 5px 8px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 11px 13px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      page-break-inside: avoid;
+    }
+    .card-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .badge {
+      display: inline-block;
+      padding: 1.5px 6px;
+      border-radius: 4px;
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-green { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    .badge-purple { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+    .badge-amber { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+
+    .section-label {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #047857;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .code-block {
+      background: #090d16;
+      color: #e2e8f0;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 7.5pt;
+      line-height: 1.35;
+      overflow-x: auto;
+      border: 1px solid #1e293b;
+      margin: 4px 0 8px 0;
+      page-break-inside: avoid;
+    }
+    .code-comment { color: #64748b; font-style: italic; }
+    .code-keyword { color: #38bdf8; font-weight: bold; }
+    .code-string { color: #34d399; }
+    .code-func { color: #fbbf24; }
+
+    .qa-box {
+      background: #fffbeb;
+      border-left: 3px solid #f59e0b;
+      padding: 6px 10px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 6px;
+      font-size: 8pt;
+      line-height: 1.35;
+    }
+    .qa-box strong { color: #b45309; }
+
+    .page-break {
+      page-break-before: always;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 7.5pt;
+      color: #64748b;
+      margin-top: 16px;
+      padding-top: 8px;
+      border-top: 1px solid #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER PRINCIPAL -->
+  <div class="banner">
+    <div class="banner-badge">Avance 1 • Sistema Front-End Web</div>
+    <h1>PowerFit <span>GYM</span></h1>
+    <p class="banner-desc">
+      Guía de Preparación Técnica para la Sustentación Oral • Universidad
+    </p>
+    <div class="meta-bar">
+      <div><strong>Stack:</strong> React 19, Vite, Tailwind CSS, Axios, React Router DOM, json-server</div>
+      <div><strong>Operatividad:</strong> 21 Requerimientos Funcionales (RF01–RF21)</div>
+      <div><strong>Auditoría:</strong> Persistencia en localStorage (:3001)</div>
+    </div>
+  </div>
+
+  <!-- PITCH DE APERTURA -->
+  <h2>🎤 Resumen Ejecutivo de 1 Minuto (Pitch de Apertura)</h2>
+  <div class="pitch-box">
+    "Buenas tardes profesora. 'PowerFit GYM' es el front-end de un sistema de gestión administrativa para un gimnasio cuyo modelo de negocio no vende planes fijos, sino servicios individuales (musculación, clases dirigidas, zona húmeda, etc.) bajo suscripción mensual personalizada.<br><br>
+    El sistema está diseñado exclusivamente para el personal del gimnasio con roles de Administrador y Staff; los socios no inician sesión, sino que son atendidos en recepción. Está construido con React 19, Vite y Tailwind CSS, consume una API dummy en json-server mediante una instancia centralizada de Axios con interceptores automáticos de auditoría, y cuenta con un sistema de logs en localStorage.<br><br>
+    Implementamos 21 requerimientos funcionales y 5 reglas de negocio puras en un módulo desacoplado, garantizando validación de vigencia de acceso, descuentos automáticos y emisión de pases de invitado."
+  </div>
+
+  <!-- TABLA DE ARCHIVOS -->
+  <h2>🗺️ Mapeo Rápido: Pregunta de la Docente → Archivo a Abrir</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Tema de la Pregunta</th>
+        <th style="width: 40%;">Ruta Real en el Repositorio</th>
+        <th style="width: 35%;">Componente / Función Clave</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Redireccionamiento y Rutas</strong></td>
+        <td><code>src/routes/AppRoutes.jsx</code><br><code>src/routes/ProtectedRoute.jsx</code></td>
+        <td><code>ProtectedRoute</code>, <code>RoleRoute</code>, <code>&lt;Navigate&gt;</code></td>
+      </tr>
+      <tr>
+        <td><strong>Autenticación y Roles</strong></td>
+        <td><code>src/context/AuthContext.jsx</code><br><code>src/pages/auth/Login.jsx</code></td>
+        <td><code>login()</code>, <code>useAuth()</code>, <code>powerfit_user</code></td>
+      </tr>
+      <tr>
+        <td><strong>Petición API e Interceptores</strong></td>
+        <td><code>src/api/axiosInstance.js</code><br><code>src/api/sociosService.js</code></td>
+        <td><code>api.interceptors.request / response</code></td>
+      </tr>
+      <tr>
+        <td><strong>Auditoría y Logs</strong></td>
+        <td><code>src/utils/logger.js</code><br><code>src/pages/logs/LogsPage.jsx</code></td>
+        <td><code>logger.info()</code>, <code>logger.warn()</code>, <code>powerfit_logs</code></td>
+      </tr>
+      <tr>
+        <td><strong>Macro: Contratar Membresía</strong></td>
+        <td><code>src/pages/membresias/NuevaMembresiaPage.jsx</code></td>
+        <td><code>handleConfirmarContratacion()</code>, RF14</td>
+      </tr>
+      <tr>
+        <td><strong>Macro: Registrar Asistencia</strong></td>
+        <td><code>src/pages/asistencias/NuevaAsistenciaPage.jsx</code></td>
+        <td><code>validarMembresiaVigente()</code>, RF18</td>
+      </tr>
+      <tr>
+        <td><strong>Reglas de Negocio Puras</strong></td>
+        <td><code>src/utils/businessRules.js</code></td>
+        <td><code>calcularMontoMembresia()</code> (R4), <code>calcularLimitePases()</code> (R1/R5)</td>
+      </tr>
+      <tr>
+        <td><strong>Borrado Lógico vs Físico</strong></td>
+        <td><code>src/pages/socios/SociosPage.jsx</code><br><code>src/api/asistenciasService.js</code></td>
+        <td><code>sociosService.deactivate()</code> vs <code>asistenciasService.delete()</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- PREGUNTAS DE RÚBRICA -->
+  <h2>📋 Desarrollo de las 6 Preguntas de Rúbrica</h2>
+
+  <!-- PREGUNTA 1 -->
+  <div class="card">
+    <div class="card-title">
+      <span>1. Redireccionamiento y Control de Rutas</span>
+      <span class="badge badge-green">Rutas y Seguridad</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>El enrutamiento está centralizado en <code>AppRoutes.jsx</code> con React Router DOM v7. Las rutas privadas están protegidas por <code>ProtectedRoute.jsx</code>: si no hay sesión activa en el <code>AuthContext</code>, captura la ruta intentada y usa <code>&lt;Navigate to="/login" replace state={{ from: location }} /&gt;</code>. Si un usuario ya logueado intenta entrar a <code>/login</code>, se le redirige automáticamente a <code>/dashboard</code>. Para rutas exclusivas de administración (categorías, productos, usuarios y logs), usamos <code>RoleRoute.jsx</code>: si un usuario con rol <code>staff</code> intenta acceder, se bloquea el paso, se registra un log WARN de auditoría y se le muestra la página <code>/403</code> (Área No Autorizada). Toda ruta desconocida cae en el comodín <code>*</code> mostrando <code>NotFound404.jsx</code>.</p>
+
+    <span class="section-label">(b) Recorrido paso a paso: Usuario no autenticado entra a /socios</span>
+    <ol>
+      <li>Usuario navega a <code>/socios</code>. <code>AppRoutes.jsx</code> detecta que está dentro del bloque <code>&lt;ProtectedRoute&gt;</code>.</li>
+      <li><code>ProtectedRoute.jsx</code> consulta <code>const { isAuthenticated } = useAuth()</code>. Retorna <code>false</code>.</li>
+      <li>Registra advertencia: <code>logger.warn('ROUTER_PROTECTION', 'Acceso denegado', { rutaIntentada: '/socios' })</code>.</li>
+      <li>Retorna <code>&lt;Navigate to="/login" state={{ from: location }} replace /&gt;</code>.</li>
+      <li>El usuario inicia sesión en <code>Login.jsx</code> y es devuelto a <code>location.state?.from?.pathname || '/dashboard'</code>.</li>
+    </ol>
+
+    <span class="section-label">(c) Código para mostrar en pantalla</span>
+    <div class="code-block">
+<span class="code-comment">// src/routes/ProtectedRoute.jsx</span>
+<span class="code-keyword">export default function</span> <span class="code-func">ProtectedRoute</span>({ children }) {
+  <span class="code-keyword">const</span> { isAuthenticated } = <span class="code-func">useAuth</span>();
+  <span class="code-keyword">const</span> location = <span class="code-func">useLocation</span>();
+
+  <span class="code-keyword">if</span> (!isAuthenticated) {
+    logger.<span class="code-func">warn</span>(<span class="code-string">'ROUTER_PROTECTION'</span>, <span class="code-string">'Acceso denegado: no autenticado'</span>, { ruta: location.pathname });
+    <span class="code-keyword">return</span> &lt;<span class="code-func">Navigate</span> to=<span class="code-string">"/login"</span> state={{ from: location }} replace /&gt;;
+  }
+  <span class="code-keyword">return</span> children;
+}
+    </div>
+
+    <div class="qa-box">
+      <strong>Pregunta de seguimiento de la docente:</strong> "¿Por qué usas &lt;Navigate&gt; y no useNavigate() en ProtectedRoute?"<br>
+      <em>Respuesta:</em> "&lt;Navigate&gt; es declarativo y se ejecuta durante el render de React, evitando parpadeos de contenido no autorizado. <code>useNavigate()</code> es un hook imperativo para callbacks o eventos tras una acción."
+    </div>
+  </div>
+
+  <!-- PREGUNTA 2 -->
+  <div class="card">
+    <div class="card-title">
+      <span>2. Petición a la API y Ciclo Asíncrono (Axios)</span>
+      <span class="badge badge-blue">Consumo API</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>Utilizamos <strong>Axios</strong> mediante una instancia centralizada en <code>src/api/axiosInstance.js</code> configurada con la URL base de json-server (<code>:3001</code>). Cuenta con interceptores de solicitud (loguea método y payload) y de respuesta (loguea status 2xx y captura errores). Aplicamos el patrón Service Layer: ningún componente llama directamente a Axios, sino a servicios especializados (como <code>sociosService.js</code>). En las pantallas, usamos <code>async/await</code> con bloques <code>try/catch/finally</code> gestionando tres estados: <code>loading</code> (spinner <code>&lt;Loader /&gt;</code>), <code>error</code> (alerta <code>&lt;ErrorMessage /&gt;</code> con botón de reintento) y <code>success</code> (renderizado en <code>&lt;Table /&gt;</code> y notificación Toast).</p>
+
+    <span class="section-label">(b) Recorrido paso a paso: Listar Socios (GET) y Contratar Membresía (POST)</span>
+    <ol>
+      <li><strong>Listar Socios:</strong> En <code>SociosPage.jsx</code>, <code>loadSocios()</code> pone <code>loading=true</code>, llama a <code>sociosService.getAll()</code> -> <code>api.get('/socios')</code> -> interceptor loguea la petición -> json-server responde 200 -> interceptor loguea respuesta -> <code>setSocios(data)</code> -> en <code>finally</code> pone <code>loading=false</code>.</li>
+      <li><strong>Contratar Membresía:</strong> En <code>NuevaMembresiaPage.jsx</code>, al confirmar pago, <code>membresiasService.create()</code> hace un POST a <code>/membresias</code> para la cabecera y luego múltiples POST en paralelo mediante <code>Promise.all()</code> hacia <code>/membresia_producto</code> para cada servicio seleccionado.</li>
+    </ol>
+
+    <span class="section-label">(c) Código para mostrar en pantalla</span>
+    <div class="code-block">
+<span class="code-comment">// src/api/axiosInstance.js</span>
+api.interceptors.request.<span class="code-func">use</span>((config) =&gt; {
+  logger.<span class="code-func">info</span>(<span class="code-string">'API_REQUEST'</span>, <span class="code-string">`\${config.method.toUpperCase()} \${config.url}`</span>, { data: config.data });
+  <span class="code-keyword">return</span> config;
+});
+
+<span class="code-comment">// src/pages/socios/SociosPage.jsx</span>
+<span class="code-keyword">const</span> <span class="code-func">loadSocios</span> = <span class="code-keyword">async</span> () =&gt; {
+  <span class="code-keyword">try</span> {
+    <span class="code-func">setLoading</span>(<span class="code-keyword">true</span>); <span class="code-func">setError</span>(<span class="code-keyword">null</span>);
+    <span class="code-keyword">const</span> data = <span class="code-keyword">await</span> sociosService.<span class="code-func">getAll</span>();
+    <span class="code-func">setSocios</span>(data);
+  } <span class="code-keyword">catch</span> (err) {
+    <span class="code-func">setError</span>(<span class="code-string">'Error al conectar con la API de socios.'</span>);
+  } <span class="code-keyword">finally</span> {
+    <span class="code-func">setLoading</span>(<span class="code-keyword">false</span>);
+  }
+};
+    </div>
+
+    <div class="qa-box">
+      <strong>Pregunta de seguimiento de la docente:</strong> "¿Por qué colocaste `setLoading(false)` en el bloque `finally`?"<br>
+      <em>Respuesta:</em> "Porque el bloque `finally` garantiza su ejecución tanto si la promesa termina con éxito como si falla la red, evitando que la aplicación se congele en estado de carga infinito."
+    </div>
+  </div>
+
+  <!-- PREGUNTA 3 -->
+  <div class="card">
+    <div class="card-title">
+      <span>3. Sistema de Auditoría y Logs</span>
+      <span class="badge badge-amber">Trazabilidad</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>El sistema de logs está centralizado en <code>src/utils/logger.js</code> y soporta niveles <strong>INFO, WARN y ERROR</strong>. Cada log registra un ID único, timestamp ISO, nivel, módulo emisor, acción y detalles en JSON. Se dispara automáticamente en: peticiones/respuestas de API (interceptores), login/logout, bloqueos por rol (403), validaciones de reglas de negocio y errores capturados. Los logs se imprimen con formato y color en la consola del navegador y persisten los últimos 100 registros en <code>localStorage</code> bajo la clave <code>powerfit_logs</code>. Además, creamos la vista <code>/logs</code> para el Administrador con filtros, visor de JSON formateado, botón de copiado y exportación a archivo <code>.json</code> descargable.</p>
+
+    <span class="section-label">(b) Recorrido paso a paso: Logs generados durante el Login</span>
+    <ol>
+      <li><code>[INFO] [API_REQUEST] GET /usuarios</code>: Interceptor de salida al consultar el email ingresado.</li>
+      <li><code>[INFO] [API_RESPONSE] GET /usuarios [200]</code>: Interceptor de entrada confirmando respuesta HTTP 200 de json-server.</li>
+      <li><code>[INFO] [AUTH_LOGIN] Sesión iniciada exitosamente por Carlos Mendoza (admin)</code>: Registrado por <code>AuthContext.jsx</code> tras validar credenciales.</li>
+      <li><em>(Si la contraseña hubiese sido errónea)</em>: Se generaría <code>[WARN] [AUTH_LOGIN] Contraseña incorrecta</code>.</li>
+    </ol>
+
+    <span class="section-label">(c) Código para mostrar en pantalla</span>
+    <div class="code-block">
+<span class="code-comment">// src/utils/logger.js</span>
+<span class="code-keyword">function</span> <span class="code-func">addLog</span>(level, modulo, accion, detalles = {}) {
+  <span class="code-keyword">const</span> logEntry = {
+    id: Date.now() + Math.random().toString(36).substring(2, 7),
+    timestamp: <span class="code-keyword">new</span> Date().toISOString(),
+    level, modulo, accion,
+    detalles: <span class="code-keyword">typeof</span> detalles === <span class="code-string">'string'</span> ? { mensaje: detalles } : detalles,
+  };
+  <span class="code-keyword">const</span> current = <span class="code-func">getStoredLogs</span>();
+  <span class="code-keyword">const</span> updated = [logEntry, ...current].slice(0, 100); <span class="code-comment">// Conserva los últimos 100</span>
+  localStorage.<span class="code-func">setItem</span>(<span class="code-string">'powerfit_logs'</span>, JSON.stringify(updated));
+  <span class="code-keyword">return</span> logEntry;
+}
+    </div>
+
+    <div class="qa-box">
+      <strong>Pregunta de seguimiento de la docente:</strong> "¿Por qué limitas el almacenamiento a los últimos 100 logs?"<br>
+      <em>Respuesta:</em> "Porque localStorage tiene una cuota máxima de 5 MB en navegadores. Limitar a los 100 eventos más recientes previene saturar el almacenamiento local sin perder la trazabilidad de las operaciones recientes."
+    </div>
+  </div>
+
+  <!-- PREGUNTA 4 -->
+  <div class="card">
+    <div class="card-title">
+      <span>4. Arquitectura y Estructura del Proyecto</span>
+      <span class="badge badge-purple">Arquitectura</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>La estructura en <code>src/</code> sigue una arquitectura por capas desacopladas: <code>api/</code> gestiona la comunicación HTTP con Axios y servicios de dominio; <code>components/common/</code> agrupa componentes reutilizables sin lógica de negocio (Table, Modal, FormField, Button, Loader); <code>components/layout/</code> contiene el shell visual (Navbar, Sidebar, MainLayout); <code>context/</code> administra estados globales (AuthContext y ToastContext); <code>hooks/</code> provee hooks reutilizables como useFetch; <code>pages/</code> divide las vistas por módulo; <code>routes/</code> define rutas y componentes de guarda; <code>utils/</code> reúne lógica pura (businessRules, logger, formatters); y <code>constants/</code> almacena los roles del sistema.</p>
+
+    <span class="section-label">(b) Árbol de Carpetas y Flujo</span>
+    <div class="code-block">
+src/
+ ├─ api/         <span class="code-comment">(axiosInstance.js, sociosService, membresiasService, etc.)</span>
+ ├─ components/  <span class="code-comment">(common: Button, Table, Modal, Loader / layout: Navbar, Sidebar)</span>
+ ├─ context/     <span class="code-comment">(AuthContext, ToastContext)</span>
+ ├─ hooks/       <span class="code-comment">(useFetch, useAuth, useToast)</span>
+ ├─ pages/       <span class="code-comment">(socios, membresias, asistencias, pases, usuarios, logs, etc.)</span>
+ ├─ routes/      <span class="code-comment">(AppRoutes, ProtectedRoute, RoleRoute)</span>
+ └─ utils/       <span class="code-comment">(businessRules.js, logger.js, formatters.js)</span>
+
+Flujo: Página UI ──&gt; Service Layer ──&gt; Axios Instance ──&gt; json-server (:3001)
+    </div>
+
+    <div class="qa-box">
+      <strong>Pregunta de seguimiento de la docente:</strong> "¿Por qué no llamaste a Axios directamente en los componentes de página?"<br>
+      <em>Respuesta:</em> "Por separación de responsabilidades y mantenibilidad. Si un endpoint cambia, se ajusta únicamente en el archivo de servicio de la entidad correspondiente sin necesidad de refactorizar múltiples vistas."
+    </div>
+  </div>
+
+  <!-- PREGUNTA 5 -->
+  <div class="card">
+    <div class="card-title">
+      <span>5. Lógica de la Interfaz: "Contratar Membresía" (RF14)</span>
+      <span class="badge badge-green">Pantalla Macro</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>La pantalla <code>NuevaMembresiaPage.jsx</code> ejecuta el macro flujo RF14. Al cargar, obtiene mediante <code>Promise.all()</code> los socios activos, productos y categorías. Al seleccionar un socio, consulta sus membresías previas y ejecuta la función pura <code>evaluarPrimeraMembresia()</code>: si es la primera, activa la alerta de la <strong>Regla R5</strong> otorgándole +1 pase bono de bienvenida. El recepcionista selecciona los servicios agrupados por categoría. En tiempo real se invoca <code>calcularMontoMembresia()</code> para aplicar el 15% de descuento si hay 4 o más productos (**Regla R4**) y <code>calcularLimitePases()</code> (**Regla R1 y R5**). Al pulsar 'Registrar Pago y Activar', guarda en <code>/membresias</code> por 1 mes y genera los detalles en <code>/membresia_producto</code>, notificando con Toast y redirigiendo al historial.</p>
+
+    <span class="section-label">(c) Código para mostrar en pantalla</span>
+    <div class="code-block">
+<span class="code-comment">// src/pages/membresias/NuevaMembresiaPage.jsx</span>
+<span class="code-keyword">const</span> selectedProducts = productos.filter((p) =&gt; selectedProductIds.includes(p.id));
+<span class="code-comment">// Cálculos puros automáticos</span>
+<span class="code-keyword">const</span> financialSummary = <span class="code-func">calcularMontoMembresia</span>(selectedProducts); <span class="code-comment">// Regla R4</span>
+<span class="code-keyword">const</span> pasesSummary = <span class="code-func">calcularLimitePases</span>(selectedProducts, isPrimeraMembresia); <span class="code-comment">// Reglas R1 y R5</span>
+    </div>
+
+    <div class="qa-box">
+      <strong>Pregunta de seguimiento de la docente:</strong> "¿Cómo previenes que se registre una membresía sin productos o sin socio?"<br>
+      <em>Respuesta:</em> "El botón de confirmación se deshabilita condicionalmente mediante <code>disabled={!selectedSocioId || selectedProducts.length === 0}</code> y además la función de guardado implementa cláusulas de guarda con alertas Toast defensivas."
+    </div>
+  </div>
+
+  <!-- PREGUNTA 6 -->
+  <div class="card">
+    <div class="card-title">
+      <span>6. Regla de Negocio: R4 (Descuento 15% por 4+ Productos)</span>
+      <span class="badge badge-blue">Regla de Negocio</span>
+    </div>
+    
+    <span class="section-label">(a) Respuesta para decir en voz alta</span>
+    <p>La <strong>Regla R4</strong> establece que si una membresía incluye 4 o más productos contratados, el <code>monto_total</code> es igual a la suma de precios base con un 15% de descuento (<code>suma * 0.85</code>). Si tiene menos de 4 productos, se cobra la suma sin descuento. Está implementada como función pura en <code>src/utils/businessRules.js</code> bajo el nombre <code>calcularMontoMembresia()</code>. La pantalla <code>NuevaMembresiaPage.jsx</code> la consume en vivo, mostrando al usuario el subtotal, el ahorro monetario exacto y el total final antes de efectuar el pago.</p>
+
+    <span class="section-label">(b) Ejemplos Numéricos de Demostración</span>
+    <ul>
+      <li><strong>Cumplimiento (4 productos):</strong> Musculación (S/. 120) + Spinning (S/. 80) + Sauna (S/. 65) + Casillero (S/. 35) = Subtotal S/. 300.00. Aplica 15% de descuento (-S/. 45.00). <strong>Total final = S/. 255.00</strong>. Mensaje: <em>"¡Descuento del 15% aplicado por contratar 4 productos! (Regla R4)"</em>.</li>
+      <li><strong>Incumplimiento (3 productos):</strong> Musculación (S/. 120) + Spinning (S/. 80) + Sauna (S/. 65) = Subtotal S/. 265.00. Descuento 0%. <strong>Total final = S/. 265.00</strong>. Mensaje: <em>"Agrega 1 producto(s) más para acceder al 15% de descuento por volumen (Regla R4)"</em>.</li>
+    </ul>
+
+    <span class="section-label">(c) Código para mostrar en pantalla</span>
+    <div class="code-block">
+<span class="code-comment">// src/utils/businessRules.js (Regla R4)</span>
+<span class="code-keyword">export function</span> <span class="code-func">calcularMontoMembresia</span>(productos = []) {
+  <span class="code-keyword">const</span> subtotal = productos.reduce((acc, p) =&gt; acc + (Number(p.precio_base) || 0), 0);
+  <span class="code-keyword">const</span> aplicaDescuento = productos.length &gt;= 4;
+  <span class="code-keyword">const</span> montoDescuento = aplicaDescuento ? subtotal * 0.15 : 0;
+  <span class="code-keyword">const</span> montoTotal = subtotal - montoDescuento;
+
+  <span class="code-keyword">return</span> {
+    subtotal: Number(subtotal.toFixed(2)),
+    montoDescuento: Number(montoDescuento.toFixed(2)),
+    montoTotal: Number(montoTotal.toFixed(2)),
+    aplicaDescuento,
+  };
+}
+    </div>
+  </div>
+
+  <!-- 10 PREGUNTAS EXTRA -->
+  <h2>❓ 10 Preguntas Extra Típicas de Sustentación</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 35%;">Pregunta de la Docente</th>
+        <th>Respuesta Técnica Sugerida</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. ¿Por qué Context API y no Redux?</strong></td>
+        <td>Para este Avance 1, solo la sesión (<code>AuthContext</code>) y las notificaciones (<code>ToastContext</code>) son globales. Context API evita dependencias pesadas y resuelve el problema con herramientas estándar de React.</td>
+      </tr>
+      <tr>
+        <td><strong>2. ¿Qué pasa si json-server está apagado?</strong></td>
+        <td>El interceptor de Axios detecta <code>ERR_NETWORK</code>, genera un log <code>ERROR</code> y la pantalla activa el componente <code>&lt;ErrorMessage&gt;</code> con un botón para reintentar la conexión.</td>
+      </tr>
+      <tr>
+        <td><strong>3. ¿Por qué borrado lógico en socios y físico en asistencias?</strong></td>
+        <td>El socio tiene historial referencial (Regla R2: asistencias y membresías no deben perderse). En asistencias se permite borrado físico (RF21) para corregir marcaciones erróneas del molinete.</td>
+      </tr>
+      <tr>
+        <td><strong>4. ¿Por qué funciones puras en businessRules.js?</strong></td>
+        <td>Porque no tienen efectos secundarios ni dependen del DOM o de APIs, lo que permite testearlas de forma unitaria y reutilizarlas en múltiples componentes sin acoplamientos.</td>
+      </tr>
+      <tr>
+        <td><strong>5. ¿Cómo persiste la información al presionar F5?</strong></td>
+        <td>La sesión se lee de <code>localStorage (powerfit_user)</code>, los logs de <code>powerfit_logs</code>, y los datos del gimnasio se vuelven a solicitar a json-server que los tiene guardados en <code>db.json</code>.</td>
+      </tr>
+      <tr>
+        <td><strong>6. ¿Cómo se valida la asistencia de un socio?</strong></td>
+        <td>En <code>NuevaAsistenciaPage.jsx</code>, <code>validarMembresiaVigente()</code> verifica que el socio tenga una membresía activa cuya <code>fecha_fin &gt;= hoy</code>. Si venció, bloquea el registro con tarjeta roja.</td>
+      </tr>
+      <tr>
+        <td><strong>7. ¿Cómo funciona la Regla R5 en socios antiguos?</strong></td>
+        <td>Al consultar <code>/membresias?socio_id=X</code>, si ya tiene registros previos, <code>esPrimera</code> es <code>false</code> y no recibe el bono +1, rigiéndose solo por el cálculo base de R1.</td>
+      </tr>
+      <tr>
+        <td><strong>8. ¿Cómo garantizas la accesibilidad (a11y)?</strong></td>
+        <td>En <code>Modal.jsx</code> escuchamos la tecla <code>Escape</code>, los inputs en <code>FormField.jsx</code> asocian <code>htmlFor</code> con <code>id</code>, y los botones poseen contrastes adecuados y estados focus visibles.</td>
+      </tr>
+      <tr>
+        <td><strong>9. ¿Cómo manejas el diseño responsive?</strong></td>
+        <td>Con Tailwind CSS y enfoque Mobile-First. En pantallas pequeñas el menú lateral se oculta y se despliega con botón hamburguesa, y las tablas poseen contenedores con scroll horizontal.</td>
+      </tr>
+      <tr>
+        <td><strong>10. ¿Por qué elegiste lucide-react para los iconos?</strong></td>
+        <td>Porque provee iconos SVG ligeros compatibles con tree-shaking, importando solo los necesarios para mantener optimizado el tamaño del bundle en producción.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- PUNTOS DÉBILES -->
+  <h2>🛡️ Puntos Débiles del Proyecto y Cómo Defenderlos con Honestidad</h2>
+  
+  <div class="card">
+    <h4>1. "Las contraseñas están en texto plano en db.json y no hay JWT real"</h4>
+    <p><strong>Cómo responder:</strong> <em>"Efectivamente profesora. Para el alcance de este Avance 1, la rúbrica solicitó expresamente una API dummy con json-server y simulación de sesión en localStorage. En un entorno de producción, las contraseñas se almacenarían con hash bcrypt en una base de datos real y la autenticación se gestionaría mediante tokens JWT en cookies HttpOnly seguras."</em></p>
+  </div>
+
+  <div class="card">
+    <h4>2. "La paginación y búsqueda de la tabla se ejecutan en memoria y no en el servidor"</h4>
+    <p><strong>Cómo responder:</strong> <em>"Es correcto. Para el volumen de datos de este avance en un prototipo local, el filtrado en cliente es instantáneo y ahorra llamadas de red. Sin embargo, nuestro servicio `sociosService.js` está diseñado para soportar en el siguiente avance los parámetros `?_page=1&_limit=10` de paginación del lado del servidor."</em></p>
+  </div>
+
+  <div class="card">
+    <h4>3. "No existe sincronización en tiempo real con WebSockets entre dos recepcionistas"</h4>
+    <p><strong>Cómo responder:</strong> <em>"Así es. Para este primer avance no se contempló arquitectura reactiva con WebSockets. Sin embargo, la integridad se mantiene porque cada acción (como registrar asistencia o crear membresía) ejecuta una petición HTTP que actualiza inmediatamente `db.json` y refresca el estado local."</em></p>
+  </div>
+
+  <div class="footer-note">
+    PowerFit GYM • Front-End Avance 1 • Guía Oficial de Sustentación Oral • Octubre 2026
+  </div>
+
+</body>
+</html>

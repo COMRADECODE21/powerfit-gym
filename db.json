@@ -1,0 +1,365 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Carlos Mendoza",
+      "email": "admin@powerfit.com",
+      "password": "admin",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "nombre": "Lucía Torres",
+      "email": "staff@powerfit.com",
+      "password": "staff",
+      "rol": "staff"
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Acceso y Musculación",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "nombre": "Clases Dirigidas",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "nombre": "Zona Húmeda y Relax",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "nombre": "Servicios Complementarios",
+      "activo": true
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "categoria_id": 1,
+      "nombre": "Acceso Sala Musculación & Cardio",
+      "precio_base": 120,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "categoria_id": 1,
+      "nombre": "Pase Entrenamiento Funcional & Cross",
+      "precio_base": 95,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "categoria_id": 2,
+      "nombre": "Membresía Clases Indoor Spinning",
+      "precio_base": 80,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "categoria_id": 2,
+      "nombre": "Clases de Yoga & Pilates Reformer",
+      "precio_base": 75,
+      "sede": "Sede Miraflores",
+      "activo": true
+    },
+    {
+      "id": 5,
+      "categoria_id": 2,
+      "nombre": "Taller de Boxeo y Artes Marciales",
+      "precio_base": 90,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 6,
+      "categoria_id": 3,
+      "nombre": "Acceso Sauna Seco y Baño Turco",
+      "precio_base": 65,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 7,
+      "categoria_id": 3,
+      "nombre": "Piscina Libre & Jacuzzi",
+      "precio_base": 110,
+      "sede": "Sede Miraflores",
+      "activo": true
+    },
+    {
+      "id": 8,
+      "categoria_id": 4,
+      "nombre": "Casillero VIP Privado Mensual",
+      "precio_base": 35,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 9,
+      "categoria_id": 4,
+      "nombre": "Evaluación Nutricional & Bioimpedancia",
+      "precio_base": 70,
+      "sede": "Sede Central",
+      "activo": true
+    },
+    {
+      "id": 10,
+      "categoria_id": 4,
+      "nombre": "Servicio de Toallas y Bebidas Fit",
+      "precio_base": 45,
+      "sede": "Sede Miraflores",
+      "activo": true
+    }
+  ],
+  "socios": [
+    {
+      "id": 1,
+      "registrado_por": "Carlos Mendoza",
+      "nombre": "Juan Pérez Gómez",
+      "documento": "72345678",
+      "telefono": "987654321",
+      "fecha_registro": "2026-01-15",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "registrado_por": "Lucía Torres",
+      "nombre": "María Fernanda López",
+      "documento": "45678912",
+      "telefono": "912345678",
+      "fecha_registro": "2026-02-10",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "registrado_por": "Lucía Torres",
+      "nombre": "Roberto Gómez Bolaños",
+      "documento": "10293847",
+      "telefono": "955443322",
+      "fecha_registro": "2026-03-01",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "registrado_por": "Carlos Mendoza",
+      "nombre": "Camila Valenzuela",
+      "documento": "78945612",
+      "telefono": "998877665",
+      "fecha_registro": "2026-04-05",
+      "activo": true
+    },
+    {
+      "id": 5,
+      "registrado_por": "Lucía Torres",
+      "nombre": "Diego Armando Rojas",
+      "documento": "33445566",
+      "telefono": "944556677",
+      "fecha_registro": "2026-05-12",
+      "activo": true
+    },
+    {
+      "id": 6,
+      "registrado_por": "Lucía Torres",
+      "nombre": "Andrea Carolina Morales",
+      "documento": "87654321",
+      "telefono": "922334455",
+      "fecha_registro": "2026-06-20",
+      "activo": true
+    },
+    {
+      "id": 7,
+      "registrado_por": "Carlos Mendoza",
+      "nombre": "Esteban Quispe Huamán",
+      "documento": "55667788",
+      "telefono": "933221100",
+      "fecha_registro": "2026-07-01",
+      "activo": false
+    },
+    {
+      "id": 8,
+      "registrado_por": "Lucía Torres",
+      "nombre": "Patricia Solano Reyes",
+      "documento": "44332211",
+      "telefono": "911223344",
+      "fecha_registro": "2026-08-15",
+      "activo": true
+    },
+    {
+      "nombre": "Juan Perez",
+      "documento": "97888767",
+      "telefono": "983467869",
+      "registrado_por": "Carlos Mendoza",
+      "fecha_registro": "2026-10-05",
+      "activo": true,
+      "id": 9
+    }
+  ],
+  "membresias": [
+    {
+      "id": 1,
+      "socio_id": 1,
+      "fecha_inicio": "2026-09-15",
+      "fecha_fin": "2026-10-15",
+      "monto_total": 120,
+      "estado": "activa",
+      "es_primera": true
+    },
+    {
+      "id": 2,
+      "socio_id": 2,
+      "fecha_inicio": "2026-09-20",
+      "fecha_fin": "2026-10-20",
+      "monto_total": 255,
+      "estado": "activa",
+      "es_primera": false
+    },
+    {
+      "id": 3,
+      "socio_id": 3,
+      "fecha_inicio": "2026-08-01",
+      "fecha_fin": "2026-09-01",
+      "monto_total": 120,
+      "estado": "vencida",
+      "es_primera": true
+    },
+    {
+      "id": 4,
+      "socio_id": 4,
+      "fecha_inicio": "2026-09-10",
+      "fecha_fin": "2026-10-10",
+      "monto_total": 195,
+      "estado": "activa",
+      "es_primera": false
+    },
+    {
+      "id": 5,
+      "socio_id": 7,
+      "fecha_inicio": "2026-07-01",
+      "fecha_fin": "2026-08-01",
+      "monto_total": 120,
+      "estado": "vencida",
+      "es_primera": true
+    }
+  ],
+  "membresia_producto": [
+    {
+      "id": 1,
+      "membresia_id": 1,
+      "producto_id": 1,
+      "precio_unitario": 120,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 2,
+      "membresia_id": 2,
+      "producto_id": 1,
+      "precio_unitario": 120,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 3,
+      "membresia_id": 2,
+      "producto_id": 3,
+      "precio_unitario": 80,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 4,
+      "membresia_id": 2,
+      "producto_id": 6,
+      "precio_unitario": 65,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 5,
+      "membresia_id": 2,
+      "producto_id": 8,
+      "precio_unitario": 35,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 6,
+      "membresia_id": 3,
+      "producto_id": 1,
+      "precio_unitario": 120,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 7,
+      "membresia_id": 4,
+      "producto_id": 1,
+      "precio_unitario": 120,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 8,
+      "membresia_id": 4,
+      "producto_id": 4,
+      "precio_unitario": 75,
+      "cantidad_disponible": 1
+    },
+    {
+      "id": 9,
+      "membresia_id": 5,
+      "producto_id": 1,
+      "precio_unitario": 120,
+      "cantidad_disponible": 1
+    }
+  ],
+  "pases_invitado": [
+    {
+      "id": 1,
+      "socio_id": 1,
+      "nombre_inv": "Lucas Silva",
+      "fecha_uso": "2026-09-18",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "socio_id": 2,
+      "nombre_inv": "Valeria Ríos",
+      "fecha_uso": "2026-09-22",
+      "activo": true
+    }
+  ],
+  "asistencias": [
+    {
+      "id": 1,
+      "socio_id": 1,
+      "fecha_hora": "2026-10-04 08:30",
+      "sede": "Sede Central"
+    },
+    {
+      "id": 2,
+      "socio_id": 1,
+      "fecha_hora": "2026-10-05 09:15",
+      "sede": "Sede Central"
+    },
+    {
+      "id": 3,
+      "socio_id": 2,
+      "fecha_hora": "2026-10-05 18:00",
+      "sede": "Sede Central"
+    },
+    {
+      "id": 4,
+      "socio_id": 4,
+      "fecha_hora": "2026-10-03 17:45",
+      "sede": "Sede Miraflores"
+    },
+    {
+      "id": 5,
+      "socio_id": 7,
+      "fecha_hora": "2026-07-15 10:00",
+      "sede": "Sede Central"
+    }
+  ]
+}
